@@ -139,9 +139,9 @@ clickButton.addEventListener('click', function(event) {
             if (points >= doubleCost) {
                 points = points - doubleCost;
                 // Linear Logic: Increase click power by 2 for every purchase
-                clickValue = Math.floor(clickValue * 1.5); // 250% increase per purchase
+                clickValue = Math.floor(clickValue * 2); // 200% increase per purchase
                 // Exponential formula: New Cost = Old Cost * Growth Rate
-                doubleCost = Math.floor(doubleCost * 2.5);
+                doubleCost = Math.floor(doubleCost * 2.1);
 
                 updateDisplay();
             }
